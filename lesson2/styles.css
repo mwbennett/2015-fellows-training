@@ -1,0 +1,48 @@
+/* 
+* @Author: Mark Bennett
+* @Date:   2015-07-20 17:32:26
+* @Last Modified by:   Mark Bennett
+* @Last Modified time: 2015-07-21 14:47:15
+*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+///           
+///    LET'S MAKE THIS THING PRETTY - SAY HELLO TO CSS!  
+///           
+/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* 
+CSS makes things look pretty! 
+
+For more info on css selectors, read here: http://www.cheetyr.com/css-selectors
+For more info on css properties, read here: http://media.mediatemple.netdna-cdn.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf
+*/
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+} 
+
+.heading {
+  text-align: center;
+}
+
+.job-title{
+	position: relative;
+	float: left;
+}
+
+.job-company{
+	position: relative;
+	float: left;
+	margin-left: 30px;
+}
+
+.job-description{
+	clear: left;
+}
+
+.name, .section-heading {
+  color: firebrick;
+}
+
