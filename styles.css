@@ -2,7 +2,7 @@
 * @Author: Mark Bennett
 * @Date:   2015-07-20 17:32:26
 * @Last Modified by:   Mark Bennett
-* @Last Modified time: 2015-07-21 13:46:46
+* @Last Modified time: 2015-07-21 14:17:27
 */
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -15,3 +15,8 @@ body {
   max-width: 800px;
   margin: 0 auto;
 } 
+
+.heading {
+  text-align: center;
+}
+
