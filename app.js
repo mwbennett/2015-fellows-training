@@ -38,6 +38,7 @@ var candidateInfo = {
   experience: [
     // Each element in this array is an object that holds data for one of Andrew's old jobs... 
     {
+      identifier: 1,
       title: "CEO and Founder",
       company: "Venture for America",
       startDate: "May 2011",
@@ -45,6 +46,7 @@ var candidateInfo = {
       description: "Founder and President of non-profit organization that provides a Fellowship Program for top college graduates to work for 2 years in start-up and early stage companies in lower-cost U.S. cities (e.g., Detroit, New Orleans, Providence)."
     },
     {
+      identifier: 2,
       title: "Director",
       company: "ProPhase, LLC",
       startDate: "July 2010",
@@ -52,6 +54,7 @@ var candidateInfo = {
       description: "Member of Board of Directors of ProPhase, an innovative rater training and data monitoring company serving the pharmaceutical industry."
     },
     {
+      identifier: 3,
       title: "Vice President",
       company: "MMF Systems",
       startDate: "April 2002",
@@ -59,6 +62,7 @@ var candidateInfo = {
       description: "Executive at innovative health care software start-up based in New York. Clients included Columbia Presbyterian and Weill Cornell Medical Center."
     },
     {
+      identifier: 4,
       title: "Vice President",
       company: "Crisp Wireless",
       startDate: "April 2001",
@@ -66,6 +70,7 @@ var candidateInfo = {
       description: "Executive at mobile software platform provider for top-tier content publishers. Clients included Sony and Time Inc."
     },
     {
+      identifier: 5,
       title: "Co-founder, President",
       company: "Stargiving.com",
       startDate: "February 2000",
@@ -99,6 +104,29 @@ var candidateInfo = {
   ]
 };
 
+
+function searchExperience (keywords) {
+
+  candidateInfo.experience.forEach(function(job) {
+    if (job.description.toLowerCase().indexOf(keywords.toLowerCase()) > -1) {
+
+    }
+    else{
+      $('#'+job.identifier).hide();
+    }
+  });
+
+  
+}
+
+function search () {
+  var searchText = $('#searchText').val();
+  searchExperience(searchText);
+}
+
+function showAll () {
+  $('.exp').show()
+}
 //////////////////////////////////////////////
 //               ADDING TO HTML             //
 //////////////////////////////////////////////  
@@ -118,7 +146,7 @@ $(document).ready(function(){
 
   candidateInfo.experience.forEach(function(job) {
     // open a div to hold the job data 
-    var jobInfo = "<div>";
+    var jobInfo = "<div class='exp' id='" + job.identifier + "'>";
     // add the title for each jobInfo 
     jobInfo += "<h3 class='job-title'>" + job.title + "</h3>";
     // add the company name 
