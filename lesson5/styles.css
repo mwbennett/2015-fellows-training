@@ -2,7 +2,7 @@
 * @Author: Mark Bennett
 * @Date:   2015-07-20 17:32:26
 * @Last Modified by:   Mark Bennett
-* @Last Modified time: 2015-07-21 14:47:15
+* @Last Modified time: 2015-07-21 17:37:41
 */
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -29,7 +29,7 @@ body {
 
 .job-title{
 	position: relative;
-	float: left;
+	/*float: left;*/
 }
 
 .job-company{

@@ -2,7 +2,7 @@
 * @Author: Mark Bennett
 * @Date:   2015-07-20 17:32:26
 * @Last Modified by:   Mark Bennett
-* @Last Modified time: 2015-07-21 17:34:30
+* @Last Modified time: 2015-07-21 17:42:27
 */
 
 
@@ -18,14 +18,18 @@ $(document).ready(function(){
   candidateInfo.experience.forEach(function(job) {
     console.log(job.title);
 
-    // open a div to hold the job data 
+    // opens a div to hold the job data 
     var jobInfo = "<div class='exp'>";
-    // add the title for each jobInfo 
-    jobInfo += "<h3 class='job-title'>Job Titles</h3><br>";
+    // YOUR CODE BELOW: change the title variable to be the correct title for each job in the data object 
+    
+    var title = "Job Titles";
+    jobInfo +=  "<h3 class='job-title'>" + title + "</h3><br>";
 
-    // close the div that holds data for each jobInfo 
+    // YOUR CODE BELOW: following the model above, add the company and description to the jobInfo string 
+
+    // closes the div that holds data for each jobInfo 
     jobInfo += "</div>";
-    // append the new stringified html to our page
+    // appends the new stringified html to our page
     $(".experience").append(jobInfo);
   });
 
