@@ -108,10 +108,7 @@ var candidateInfo = {
 function searchExperience (keywords) {
 
   candidateInfo.experience.forEach(function(job) {
-    if (job.description.toLowerCase().indexOf(keywords.toLowerCase()) > -1) {
-
-    }
-    else{
+    if (job.description.toLowerCase().indexOf(keywords.toLowerCase()) < 0) {
       $('#'+job.identifier).hide();
     }
   });
