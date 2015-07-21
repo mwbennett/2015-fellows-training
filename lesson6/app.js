@@ -2,7 +2,7 @@
 * @Author: Mark Bennett
 * @Date:   2015-07-20 17:32:26
 * @Last Modified by:   Mark Bennett
-* @Last Modified time: 2015-07-21 17:57:23
+* @Last Modified time: 2015-07-21 17:53:11
 */
 
 'use strict';
@@ -37,35 +37,26 @@ $(document).ready(function(){
     $(".experience").append(jobInfo);
   });
 
-  candidateInfo.education.forEach(function(edu) {
-    console.log(edu.title);
+  // NOW YOU TRY - Use the looping structure that was used for jobs above as a template for 
+  // adding Andrew's education and activities data to his resume. Loop through each element 
+  // in the education array and add the related data. 
 
-    // opens a div to hold the job data 
-    var schoolInfo = "<div class='school'>";
-    // YOUR CODE BELOW: change the title variable to be the correct title for each job in the data object 
+
+  function searchExperience (keywords) {
+
+    candidateInfo.experience.forEach(function(job) {
+      // create a conditional check to see if the given keywords are contained in the given job description 
+      if (true /* replace true with your condition here */) {
+        // add code to be executed when the above condition is true 
+      }
+    });
     
-    var school = edu.school;
-    schoolInfo += "<h3 class='job-title'>" + school + "</h3>";
-    schoolInfo += "<h4 class='job-company clearfix'>" + edu.degree + "</h4>";
-    schoolInfo += "<p class='job-description'>" + edu.years + "</p>";
-    schoolInfo += "</div>";
-    $(".education").append(schoolInfo);
-  });
+  }
 
-  candidateInfo.activities.forEach(function(activity) {
-    console.log(activity.title);
-
-    // opens a div to hold the job data 
-    var activityInfo = "<div class='activity'>"; 
-    var title = activity.title;
-    activityInfo += "<h3 class='job-title'>" + title + "</h3>";
-    activityInfo += "<h4 class='job-company clearfix'>" + activity.description + "</h4>";
-
-    // closes the div that holds data for each activityInfo 
-    activityInfo += "</div>";
-    // appends the new stringified html to our page
-    $(".activities").append(activityInfo);
-  });
-
+  // You can ignore this code, but know that it's necessary to get the user input from the html page 
+  function search () {
+    var searchText = $('#searchText').val();
+    searchExperience(searchText);
+  }
 
 });
