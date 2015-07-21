@@ -2,7 +2,7 @@
 * @Author: Mark Bennett
 * @Date:   2015-07-20 17:32:26
 * @Last Modified by:   Mark Bennett
-* @Last Modified time: 2015-07-21 14:22:42
+* @Last Modified time: 2015-07-21 14:43:29
 */
 
 'use strict';
@@ -71,7 +71,7 @@ $(document).ready(function(){
 
   ////////////////////////////////////////////////////////////////////////////////////////////
   // NOW YOU TRY - Use the looping structure that was used for jobs above as a template for 
-  // adding Andrew's education data to his resume. Loop through each element in the education array 
-  // and add the related data. 
+  // adding Andrew's education and activities data to his resume. Loop through each element 
+  // in the education array and add the related data. 
   ////////////////////////////////////////////////////////////////////////////////////////////
 });

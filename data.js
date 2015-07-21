@@ -2,7 +2,7 @@
 //               RESUME DATA                //
 //////////////////////////////////////////////
 
-// This is our data object. An object is istelf a data type, which stores key/value pairs. 
+// This file contains our data object. An object is istelf a data type, which stores key/value pairs. 
 // If you are brand new to programming and are unfamiliar with data types, you can read more at 
 // http://www.w3schools.com/js/js_datatypes.asp OR at http://eloquentjavascript.net/01_values.html if you 
 // want more of a narrative.
