@@ -20,3 +20,17 @@ body {
   text-align: center;
 }
 
+.job-title{
+	position: relative;
+	float: left;
+}
+
+.job-company{
+	position: relative;
+	float: left;
+	margin-left: 30px;
+}
+
+.job-description{
+	clear: left;
+}

@@ -55,7 +55,7 @@ $(document).ready(function(){
     // add the title for each jobInfo 
     jobInfo += "<h3 class='job-title'>" + job.title + "</h3>";
     // add the company name 
-    jobInfo += "<h4 class='job-company'>" + job.company + "</h4>";
+    jobInfo += "<h4 class='job-company clearfix'>" + job.company + "</h4>";
     // add description 
     jobInfo += "<p class='job-description'>" + job.description + "</p>";
 
